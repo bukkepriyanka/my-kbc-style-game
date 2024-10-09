@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBC Style Game</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+    <h1>KBC Style Game</h1>
+    <div class="qr-code">
+        <img id="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://192.168.31.157:5500/enter-name.html" alt="QR Code for game participation" />
+    </div>
+
+    <div class="player-input">
+        <input type="text" id="playerName" placeholder="Enter your name" required>
+        <button id="submitName">Submit</button>
+    </div>
+
+    <div id="message"></div> <!-- To display the welcome message -->
+    
+    <button id="joinGame" style="display:none;">Join Now</button> <!-- Join button -->
+
+    <div id="questionSection" style="display:none;">
+        <h2>Questions</h2>
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="nextQuestion" style="display:none;">Next Question</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to JavaScript -->
+</body>
+</html>

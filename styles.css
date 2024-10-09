@@ -1,0 +1,56 @@
+body {
+    background-color: grey; /* Set background color to grey */
+    color: white; /* Set text color to white */
+    font-family: Arial, sans-serif; /* Set font */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Reduced padding for mobile */
+    margin: 0; /* Remove default margin */
+}
+
+h1 {
+    font-size: 2em; /* Smaller font size for mobile */
+    margin-bottom: 20px; /* Add bottom margin */
+}
+
+.qr-code {
+    margin-top: 20px; /* Add top margin for QR code */
+}
+
+.player-input {
+    margin-top: 30px; /* Add margin above input section */
+}
+
+input[type="text"] {
+    padding: 10px; /* Add padding */
+    font-size: 1em; /* Set font size */
+    margin-right: 10px; /* Add margin to the right */
+    width: 70%; /* Make input responsive */
+}
+
+button {
+    padding: 10px 15px; /* Add padding */
+    font-size: 1em; /* Set font size */
+    cursor: pointer; /* Change cursor on hover */
+    background-color: white; /* Set background color */
+    color: grey; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Round corners */
+}
+
+button:hover {
+    background-color: lightgrey; /* Change background on hover */
+}
+
+#questionSection {
+    margin-top: 30px; /* Add margin above question section */
+}
+
+#options {
+    margin-top: 10px; /* Add margin above options */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em; /* Adjust heading size for mobile */
+    }
+}
